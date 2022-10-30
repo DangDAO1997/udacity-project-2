@@ -1,0 +1,184 @@
+html {
+  background: url(../images/mar.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+p {
+  color: wheat;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.nav-info-right {
+  position: fixed;
+  width: 35%;
+  right: 0;
+  height: 100vh;
+}
+
+.nav-info-left {
+  position: fixed;
+  width: 65%;
+  height: 100vh;
+}
+
+.scroll {
+  overflow-y: auto;
+}
+
+model-viewer {
+  width: 100%;
+  height: 50vh;
+  margin: 0, auto;
+}
+
+.model {
+  display: flex;
+  z-index: 10;
+}
+
+.model p {
+  font-size: large;
+}
+
+.left {
+  position: fixed;
+  right: 0;
+  margin-left: 10px;
+}
+
+.right {
+  position: fixed;
+  right: 0;
+  margin-right: 10px;
+}
+
+.border {
+  border-style: dashed;
+}
+
+.welcome {
+  margin-top: 30px;
+  color: wheat;
+  text-align: center;
+}
+
+.loading {
+  margin-top: 50vh;
+  color: rgb(212, 228, 153);
+  text-align: center;
+}
+
+.select-rover {
+  margin-top: 30px;
+  color: rgb(212, 228, 153);
+  text-align: center;
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.column {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.column:last-child {
+	padding-bottom: 60px;
+}
+.column::after {
+	content: '';
+	clear: both;
+	display: block;
+}
+.column div {
+	position: relative;
+	float: left;
+	margin: 0 0 0 25px;
+	padding: 0;
+}
+.column div span {
+  width: 100%;
+	position: absolute;
+	bottom: -20px;
+	left: 0;
+	z-index: -1;
+	display: block;
+	margin: 0;
+	padding: 0;
+	color: wheat;
+	font-size: 18px;
+	text-decoration: none;
+	text-align: center;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+	opacity: 0;
+}
+figure {
+  border-radius: 50%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+figure:hover+span {
+	bottom: -36px;
+	opacity: 1;
+}
+
+.hoverImg figure img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hoverImg figure:hover img {
+  width: 300px;
+  height: 300px;
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+.close {
+  position: fixed;
+  right: 0;
+}

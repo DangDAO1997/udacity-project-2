@@ -1,0 +1,80 @@
+@import './resets.css';
+
+/* -------------------  MOBILE  --------------------- */
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial;
+  min-height: 100vh;
+}
+
+/* -------------------  TABLET  --------------------- */
+@media (min-width: 768px) {
+  /* use mobile */
+}
+
+/* -------------------  DESKTOP  -------------------- */
+
+@media (min-width: 1224px) {
+  /* use mobile */
+}
+
+/* -------------------  LARGE SCREENS  -------------- */
+
+@media (min-width: 1824px) {
+  /* use mobile */
+}
+
+/* Common */
+.tab-container{
+  display: flex;
+  background: #fff;
+  width: 100%;
+  text-align: center;
+  position: fixed;
+}
+
+.tab{
+  padding: 1em;
+  margin-bottom: 0;
+  width: 100%;
+  font-weight: bold;
+  font-size: 0.8em;
+  background: rgb(241, 190, 207);
+}
+
+.tab.active {
+  background: palevioletred;
+  border-bottom: 6px solid rgb(236, 225, 67);
+}
+
+.tab:hover {
+  cursor: pointer;
+  background: rgb(218, 136, 163);
+}
+
+.tab:active {
+  background: palevioletred;
+}
