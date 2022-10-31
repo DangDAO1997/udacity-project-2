@@ -1,4 +1,4 @@
-let store = {
-  user: { name: "Dang DAO" },
+let store = Immutable.Map({
+  user: Immutable.Map({ name: "Dang DAO" }),
   roverSeleted: ''
-}
+})
